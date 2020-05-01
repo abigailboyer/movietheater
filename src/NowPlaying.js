@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieTile from './MovieTile.js';
+import './NowPlaying.css';
 
 function NowPlaying() {
   return(
