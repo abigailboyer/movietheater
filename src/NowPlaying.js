@@ -7,6 +7,7 @@ function NowPlaying() {
     <section id="nowPlaying">
       <MovieTile />
       <MovieTile />
+      <MovieTile />
     </section>
   );
 }
