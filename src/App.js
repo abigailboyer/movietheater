@@ -3,7 +3,12 @@ import React from 'react';
 function App() {
   return (
     <main>
-      <h1>hi</h1>
+      <header>
+        <h1>The Cage</h1>
+      </header>
+      <footer>
+        <Nav />
+      </footer>
     </main>
   );
 }
