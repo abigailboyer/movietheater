@@ -8,8 +8,6 @@ function MoviePreview() {
   return(
     <article>
       <img src={Poster} className="poster" />
-      <h3 className="movieTitle">{MovieTitle}</h3>
-      <p className="movieDescription">{MovieDescription}</p>
     </article>
   );
 }
