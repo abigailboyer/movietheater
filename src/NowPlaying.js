@@ -1,14 +1,17 @@
 import React from 'react';
 import MovieTile from './MovieTile.js';
 import './NowPlaying.css';
-import Poster from './images/wicker-man1.jpg';
+import movieData from "./movieData";
 
 function NowPlaying() {
+  const movies = movieData.map(movie => {
+    return(
+      <MovieTile poster={movie.poster} />
+    )
+  });
   return(
     <section className="MovieTileList">
-      <MovieTile poster={Poster} />
-      <MovieTile poster={Poster} />
-      <MovieTile poster={Poster} />
+      {movies}
     </section>
   );
 }
