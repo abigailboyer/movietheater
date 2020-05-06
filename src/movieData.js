@@ -1,5 +1,6 @@
 import Wicker from './images/wicker-man1.jpg';
 import Deadfall from './images/deadfall.jpg';
+import GrandIsle from './images/grandisle.jpg';
 
 const movieData = [
   {
@@ -13,6 +14,12 @@ const movieData = [
     title: "Deadfall",
     description: "A New Yorker (Michael Biehn) heads to California to find the look-alike brother (James Coburn) of his con-man father.",
     poster: Deadfall
+  },
+  {
+    id: 3,
+    title: "Grand Isle",
+    description: "Walter and his neglected wife lure a young stranger into their Victorian home to escape from a hurricane. When the man is charged with murder by Detective Jones, he must reveal the couple's wicked secrets to save himself.",
+    poster: GrandIsle
   }
 ]
 
