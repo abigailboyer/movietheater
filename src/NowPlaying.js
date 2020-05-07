@@ -4,14 +4,16 @@ import './NowPlaying.css';
 import movieData from "./movieData";
 
 function NowPlaying() {
-  const movies = movieData.map(movie => {
+  const movieComponents = movieData.map(movie => {
     return(
       <MovieTile poster={movie.poster} />
     )
   });
   return(
     <section className="MovieTileList">
-      {movies}
+      <ul>
+        <li>{movieComponents}</li>
+      </ul>
     </section>
   );
 }
