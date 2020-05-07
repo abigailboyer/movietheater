@@ -6,7 +6,8 @@ nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,su
 body {
   margin: 20px;
 
-  background-color: #0A0F2D;
+  /* background-color: #0A0F2D; */
+  background-color: #ddd;
   color: white;
   font-family: sans-serif;
 }
