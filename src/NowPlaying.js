@@ -14,7 +14,7 @@ class NowPlaying extends React.Component {
   render() {
     const movieComponents = this.state.movies.map(movie => {
       return(
-        <MovieTile poster={movie.poster} />
+        <MovieTile poster={movie.poster} key={movie.id} />
       )
     });
 
