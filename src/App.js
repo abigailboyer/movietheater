@@ -3,13 +3,20 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 import NowPlaying from './NowPlaying.js';
 
-function App() {
-  return (
-    <main>
-      <Header />
-      <NowPlaying />
-    </main>
-  );
+class App extends React.Component {
+  constructor(){
+    super()
+    this.state = {}
+  }
+
+  render() {
+    return (
+      <main>
+        <Header />
+        <NowPlaying />
+      </main>
+    );
+  }
 }
 
 export default App;
