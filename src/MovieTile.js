@@ -1,9 +1,14 @@
 import React from 'react';
 
 function MoviePreview(props) {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("I was clicked");
+  }
+
   return(
-    <article class="movieTiles">
-      <img src={props.poster} className="poster" />
+    <article className="movieTiles">
+      <a href="#" onClick={handleClick}><img src={props.poster} className="poster" /></a>
     </article>
   );
 }
