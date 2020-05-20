@@ -1,20 +1,21 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 /* maybe when you click on the poster it collects the id of that poster
    then you go to /movie/{id} or something like that but i think that
    we'd need router for that?
+   
+   I added router stuff in the nowplaying.js 
 */
-function MoviePreview(props) {
-  function handleClick(e) {
-    e.preventDefault();
-    console.log("I was clicked");
-  }
+class MovieTile extends React.Component {
 
-  return(
-    <article className="movieTiles">
-      <a href="#" onClick={handleClick}><img src={props.poster} className="poster" /></a>
-    </article>
-  );
+  render() {
+    return(
+      <article className="movieTiles">
+          <img src={this.props.poster} className="poster" alt={this.props.title} />
+      </article>
+    );
+  }
 }
 
-export default MoviePreview;
+export default MovieTile;
