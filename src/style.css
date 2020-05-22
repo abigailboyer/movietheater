@@ -6,8 +6,52 @@ nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,su
 body {
   margin: 20px;
 
-  background-color: #0A0F2D;
-  color: white;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* background-color: #0A0F2D; */
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+/**
+* NAVIGATION
+**/
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list-item {
+  display: inline-block
+}
+
+.nav-list-button {
+  background: none;
+  border: none;
+}
+
+.nav-list-image {
+  max-height: 5vh;
+  width: auto;
 }
