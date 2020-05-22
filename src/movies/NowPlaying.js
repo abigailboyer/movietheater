@@ -2,8 +2,8 @@ import React from 'react';
 import MovieTile from './MovieTile.js';
 import MoviePreview from './MoviePreview.js';
 import './NowPlaying.css';
-import movieData from "./movieData";
-import featuredData from './featuredData';
+import movieData from "../data/movieData";
+import featuredData from '../data/featuredData';
 import {Link} from 'react-router-dom';
 
 class NowPlaying extends React.Component {
@@ -18,8 +18,8 @@ class NowPlaying extends React.Component {
 
   handleClick(data) {
     /**
-     * I'm trying to figure out how to pass the data from the click to props for the router in App.js but im 
-     * dumb 
+     * I'm trying to figure out how to pass the data from the click to props for the router in App.js but im
+     * dumb
      */
     let movieInfo = []
     movieInfo.push(data);
@@ -53,7 +53,7 @@ class NowPlaying extends React.Component {
     return(
       <div>
         <section className="featured-movie">
-          <h1 className="featured-movie-title">Pay the Ghost</h1>  
+          <h1 className="featured-movie-title">Pay the Ghost</h1>
         </section>
         <section className="movie-tile-section">
           <h3>Featured</h3>

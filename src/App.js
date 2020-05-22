@@ -6,7 +6,7 @@ import Tickets from './Tickets.js';
 import Profile from './Profile.js';
 import Footer from './Footer.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MoviePreview from './MoviePreview';
+import MoviePreview from './movies/MoviePreview';
 
 class App extends React.Component {
   constructor(){

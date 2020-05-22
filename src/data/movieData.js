@@ -1,6 +1,6 @@
-import LeftBehind from './images/left-behind.jpg';
-import Arsenal from './images/arsenal.jpg';
-import GrandIsle from './images/grandisle.jpg';
+import LeftBehind from '../images/left-behind.jpg';
+import Arsenal from '../images/arsenal.jpg';
+import GrandIsle from '../images/grandisle.jpg';
 
 const movieData = [
   {

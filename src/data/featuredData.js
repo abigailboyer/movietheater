@@ -1,6 +1,6 @@
-import Wicker from './images/wicker-man1.jpg';
-import Deadfall from './images/deadfall.jpg';
-import NationalTreasure from './images/national-treasure.jpg';
+import Wicker from '../images/wicker-man1.jpg';
+import Deadfall from '../images/deadfall.jpg';
+import NationalTreasure from '../images/national-treasure.jpg';
 
 const featuredData = [
     {

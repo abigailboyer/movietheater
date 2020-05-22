@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import NowPlaying from './NowPlaying';
+import NowPlaying from './movies/NowPlaying';
 
 class Home extends React.Component {
     render() {
