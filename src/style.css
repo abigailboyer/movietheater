@@ -27,3 +27,31 @@ h1 {
 h3 {
   font-weight: bold;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+/**
+* NAVIGATION
+**/
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list-item {
+  display: inline-block
+}
+
+.nav-list-button {
+  background: none;
+  border: none;
+}
+
+.nav-list-image {
+  max-height: 5vh;
+  width: auto;
+}
