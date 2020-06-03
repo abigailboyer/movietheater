@@ -20,6 +20,7 @@ class NowPlaying extends React.Component {
     /**
      * I'm trying to figure out how to pass the data from the click to props for the router in App.js but im
      * dumb
+     * me too its ok
      */
     let movieInfo = []
     movieInfo.push(data);
@@ -32,7 +33,7 @@ class NowPlaying extends React.Component {
   render() {
     const newMovies = this.state.newMovies.map(movie => {
       return(
-        <li className="movieTiles" key={movie.id} onClick={this.handleClick.bind(this, movie)}>
+        <li className="movieTile" key={movie.id} onClick={this.handleClick.bind(this, movie)}>
           <Link to="/movies/new">
             <MovieTile poster={movie.poster} title={movie.title} />
           </Link>
@@ -42,7 +43,7 @@ class NowPlaying extends React.Component {
 
     const featuredMovies = this.state.featuredMovies.map(featured => {
       return(
-        <li className="movieTiles" key={featured.id} id={featured.title} onClick={this.handleClick.bind(this, featured)}>
+        <li className="movieTile" key={featured.id} id={featured.title} onClick={this.handleClick.bind(this, featured)}>
           <Link to="/movies/featured">
             <MovieTile poster={featured.poster} title={featured.title} />
           </Link>
@@ -57,13 +58,13 @@ class NowPlaying extends React.Component {
         </section>
         <section className="movie-tile-section">
           <h3>Featured</h3>
-          <ul className="MovieTileList">
+          <ul className="movieTileList">
             {featuredMovies}
           </ul>
         </section>
         <section className="movie-tile-section">
           <h3>New</h3>
-          <ul className="MovieTileList">
+          <ul className="movieTileList">
             {newMovies}
           </ul>
         </section>
