@@ -1,10 +1,11 @@
+/* TODO: make the preview image center on small screens */
+
 .poster {
   width: 150px;
   border-radius: 15px;
 }
 
 /* horizontal scrolling */
-
 .movieTileList {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -17,6 +18,7 @@
   margin-bottom: 21px;
 }
 
+/* featured film preview on top */
 .featured-movie {
   position: relative;
   height: 70vh;
