@@ -1,11 +1,10 @@
 import React from 'react';
-import Nav from './Nav';
 
+/* todo: add menu with the signin and account settings, maybe order history */
 function Header() {
   return(
     <header>
       <section className="grid">
-        <Nav />
         <h1>The Cage</h1>
       </section>
     </header>
