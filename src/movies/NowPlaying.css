@@ -3,7 +3,19 @@
   border-radius: 15px;
 }
 
-.movieTiles {
+/* horizontal scrolling */
+
+.movieTileList {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.movieTile {
+  display: inline-block;
+}
+
+.movieTile {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 21px;
@@ -24,16 +36,4 @@
   position: absolute;
   bottom: 0;
   margin-left: 10px;
-}
-
-/* horizontal scrolling */
-
-.movieTileList {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.movieTile {
-  display: inline-block;
 }
