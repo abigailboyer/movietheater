@@ -56,15 +56,3 @@ h3 {
   max-height: 5vh;
   width: auto;
 }
-
-/* horizontal scrolling for movie tiles on main page */
-
-.movieTileList {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.movieTile {
-  display: inline-block;
-}

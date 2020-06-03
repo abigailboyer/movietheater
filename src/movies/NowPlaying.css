@@ -5,8 +5,8 @@
 
 .movieTiles {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-bottom: 21px;
 }
 
 .featured-movie {
@@ -24,4 +24,16 @@
   position: absolute;
   bottom: 0;
   margin-left: 10px;
+}
+
+/* horizontal scrolling */
+
+.movieTileList {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.movieTile {
+  display: inline-block;
 }
