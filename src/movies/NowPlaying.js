@@ -41,10 +41,10 @@ class NowPlaying extends React.Component {
       )
     });
 
-    const featuredMovies = this.state.featuredMovies.map(featured => {
+    const featuredMovies = featuredData.map(featured => {
       return(
         <li className="movieTile" key={featured.id} id={featured.title} onClick={this.handleClick.bind(this, featured)}>
-          <Link to="/movies/featured">
+          <Link to={`/movies/${featured.id}`}>
             <MovieTile poster={featured.poster} title={featured.title} />
           </Link>
         </li>

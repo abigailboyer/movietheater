@@ -18,14 +18,16 @@ class App extends React.Component {
     return (
       <main>
         <Router>
-        <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/browse' component={Browse} />
-            <Route path='/tickets' component={Tickets} />
-            <Route path='/profile' component={Profile} />
-            <Route path='/movies/featured' component={MoviePreview} />
-            <Route path='/movies/new' component={MoviePreview} />
-        </Switch>
+          <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/browse' component={Browse} />
+              <Route path='/tickets' component={Tickets} />
+              <Route path='/profile' component={Profile} />
+              <Route exact path='/movies/featured'>
+                <MoviePreview />
+              </Route>
+              <Route path='/movies/new' component={MoviePreview} />
+          </Switch>
         </Router>
       </main>
     );
