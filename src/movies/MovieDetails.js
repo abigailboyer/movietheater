@@ -1,6 +1,7 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import featuredData from '../data/featuredData'
+import Showtimes from '../checkout/Showtimes'
 
 function MovieDetails(props) {
   const {movieId} = useParams();
@@ -11,6 +12,10 @@ function MovieDetails(props) {
 
   return (
     <main id="movieDetailsPage">
+      <article id="moviePoster">
+        <img src={thisMovie.poster} id="detailPoster" alt={thisMovie.title} />
+      </article>
+
       <section id="movieDescription">
         <h2>{thisMovie.title}</h2>
         <h4>Rotten Tomatoes: 10%</h4>
@@ -19,6 +24,7 @@ function MovieDetails(props) {
 
       <section id="showtimes">
         {/* ticket purchasing starts here */}
+        <Showtimes />
       </section>
     </main>
   )
