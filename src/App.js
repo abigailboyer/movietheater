@@ -24,9 +24,12 @@ class App extends React.Component {
               <Route path='/browse' component={Browse} />
               <Route path='/tickets' component={Tickets} />
               <Route path='/profile' component={Profile} />
-              <Route path='/movies/:movieId'>
-                <MovieDetails />
+              <Route path='/movies/featured/:movieId'>
+                <MovieDetails type="featured" />
               </Route>
+              <Route path='/movies/new/:movieId'>
+                <MovieDetails type="new" />
+              </Route>              
               <Route path='/movies/new' component={MoviePreview} />
           </Switch>
         </Router>
