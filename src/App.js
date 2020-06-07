@@ -1,13 +1,14 @@
-import React from 'react';
-import Header from './Header.js';
-import Home from './Home.js';
-import Browse from './Browse.js';
-import Tickets from './Tickets.js';
-import Profile from './Profile.js';
-import Footer from './Footer.js';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MoviePreview from './movies/MoviePreview';
-import MovieDetails from './movies/MovieDetails';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Header from './Header.js'
+import Home from './Home.js'
+import Browse from './Browse.js'
+import Tickets from './Tickets.js'
+import Profile from './Profile.js'
+import Footer from './Footer.js'
+import MoviePreview from './movies/MoviePreview'
+import MovieDetails from './movies/MovieDetails'
+import Checkout from './checkout/Checkout'
 
 class App extends React.Component {
   constructor(){
@@ -30,7 +31,9 @@ class App extends React.Component {
               <Route path='/movies/new/:movieId'>
                 <MovieDetails type="new" />
               </Route>
-              <Route path='/movies/new' component={MoviePreview} />
+              <Route path='/checkout'>
+                <Checkout />
+              </Route>
           </Switch>
         </Router>
       </main>
