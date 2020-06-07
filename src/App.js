@@ -7,6 +7,7 @@ import Profile from './Profile.js';
 import Footer from './Footer.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MoviePreview from './movies/MoviePreview';
+import MovieDetails from './movies/MovieDetails';
 
 class App extends React.Component {
   constructor(){
@@ -23,8 +24,8 @@ class App extends React.Component {
               <Route path='/browse' component={Browse} />
               <Route path='/tickets' component={Tickets} />
               <Route path='/profile' component={Profile} />
-              <Route exact path='/movies/featured'>
-                <MoviePreview />
+              <Route path='/movies/:movieId'>
+                <MovieDetails />
               </Route>
               <Route path='/movies/new' component={MoviePreview} />
           </Switch>
