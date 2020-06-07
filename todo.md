@@ -1,4 +1,4 @@
 ### todo
 
-* link the movie tiles to their individual description pages. idk how yet
-* idk
+* add error checking to form
+  * make sure you can't click continue unless you've selected a showtime and date
