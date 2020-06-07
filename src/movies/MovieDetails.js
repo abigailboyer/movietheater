@@ -15,12 +15,13 @@ function MovieDetails(props) {
   if(type === "new") {
     var thisMovie = movieData.find(movie => movie._id = movieId)
   } else if (type === "featured") {
-      thisMovie = featuredData.find(movie => movie._id = movieId)
+    var thisMovie = featuredData.find(movie => movie._id = movieId)
   }
 
   return (
     <main id="movieDetailsPage">
       <section id="movieDescription">
+        <img src={thisMovie.poster} />
         <h2>{thisMovie.title}</h2>
         <h4>Rotten Tomatoes: 10%</h4>
         <p>{thisMovie.description}</p>
@@ -31,7 +32,7 @@ function MovieDetails(props) {
             when you click the continue button */}
         <Showtimes />
         <Link to="/checkout">
-          <button className="form continue">Continue</button>
+          <button className="continue">Continue</button>
         </Link>
       </section>
     </main>
