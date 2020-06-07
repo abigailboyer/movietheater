@@ -10,10 +10,17 @@ function MovieDetails(props) {
   const thisMovie = featuredData.find(movie => movie._id == movieId)
 
   return (
-    <section>
-      <h1>{thisMovie.title}</h1>
-      <p>{thisMovie.description}</p>
-    </section>
+    <main id="movieDetailsPage">
+      <section id="movieDescription">
+        <h2>{thisMovie.title}</h2>
+        <h4>Rotten Tomatoes: 10%</h4>
+        <p>{thisMovie.description}</p>
+      </section>
+
+      <section id="showtimes">
+        {/* ticket purchasing starts here */}
+      </section>
+    </main>
   )
 }
 
