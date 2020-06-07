@@ -6,17 +6,28 @@ function Showtimes(props) {
      call this function inside the ol below */
 
   return (
-    <ol>
-      <li>
-        July 1
-      </li>
-      <li>
-        July 2
-      </li>
-      <li>
-        July 3
-      </li>
-    </ol>
+    <section id="dateTimeSelection">
+      <ol id="dates">
+        <li>
+          1 July
+        </li>
+        <li>
+          2 July
+        </li>
+        <li>
+          3 July
+        </li>
+      </ol>
+
+      <ol id="showtimes">
+        <li>
+          10:00pm
+        </li>
+        <li>
+          10:30pm
+        </li>
+      </ol>
+    </section>
   )
 }
 
