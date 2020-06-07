@@ -1,7 +1,9 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import featuredData from '../data/featuredData'
 import movieData from '../data/movieData'
+import Showtimes from '../checkout/Showtimes'
 
 function MovieDetails(props) {
   const {movieId} = useParams();
@@ -25,7 +27,12 @@ function MovieDetails(props) {
       </section>
 
       <section id="showtimes">
-        {/* ticket purchasing starts here */}
+        {/* make a date and time selection, pass that selection on to the next page
+            when you click the continue button */}
+        <Showtimes />
+        <Link to="/checkout">
+          <button className="form continue">Continue</button>
+        </Link>
       </section>
     </main>
   )
