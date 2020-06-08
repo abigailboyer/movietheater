@@ -1,34 +1,26 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import movieData from '../data/movieData'
 
-function Showtimes(props) {
+class Showtimes extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      newMovies: movieData
+    }
+  }
 
-  /* for each day, create an li with the date in it
-     call this function inside the ol below */
-
-  return (
-    <section id="dateTimeSelection">
-      <ol id="dates">
-        <li>
-          1 July
-        </li>
-        <li>
-          2 July
-        </li>
-        <li>
-          3 July
-        </li>
-      </ol>
-
+  render() {
+      /*const showtimes = this.state.newMovies.showtimes.map(showtime => {
+        console.log(showtime);
+      });*/
+      
+    return (
       <ol id="showtimes">
-        <li>
-          10:00pm
-        </li>
-        <li>
-          10:30pm
-        </li>
+        h
       </ol>
-    </section>
-  )
+    )
+  }
 }
 
 export default Showtimes
