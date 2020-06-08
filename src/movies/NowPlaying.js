@@ -33,7 +33,7 @@ class NowPlaying extends React.Component {
   render() {
     const newMovies = this.state.newMovies.map(movie => {
       return(
-        <li className="movieTile" key={movie.id}>
+        <li className="movieTile" key={movie._id}>
           <Link to={`/movies/new/${movie._id}`}>
             <MovieTile poster={movie.poster} title={movie.title} />
           </Link>
@@ -43,7 +43,7 @@ class NowPlaying extends React.Component {
 
     const featuredMovies = featuredData.map(featured => {
       return(
-        <li className="movieTile" key={featured.id}>
+        <li className="movieTile" key={featured._id}>
           <Link to={`/movies/featured/${featured._id}`}>
             <MovieTile poster={featured.poster} title={featured.title} />
           </Link>

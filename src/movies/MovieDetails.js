@@ -7,9 +7,6 @@ import Showtimes from '../checkout/Showtimes'
 
 function MovieDetails(props) {
   const {movieId} = useParams();
-  console.log(props);
-  console.log(movieId);
-  //console.log(typeof(movieId));
   var type = props.type;
 
   if(type === "new") {
@@ -27,10 +24,17 @@ function MovieDetails(props) {
         <p>{thisMovie.description}</p>
       </section>
 
-      <section id="showtimes">
+      <section>
         {/* make a date and time selection, pass that selection on to the next page
             when you click the continue button */}
-        <Showtimes />
+        <ol id="dates">
+
+        </ol>
+
+        <ol id="showtimes">
+          <Showtimes />
+        </ol>
+
         <Link to="/checkout">
           <button className="continue">Continue</button>
         </Link>
